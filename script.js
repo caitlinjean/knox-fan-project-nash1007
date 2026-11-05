@@ -39,17 +39,29 @@ tabButtons.forEach(button => {
     selectedPanel.hidden = false;
     selectedPanel.classList.add("active");
 
+    // initialize instagram embeds when their tab becomes visible
+if (selectedPanel.querySelector(".instagram-media")) {
+  setTimeout(() => {
+    if (window.instgrm?.Embeds?.process) {
+      window.instgrm.Embeds.process();
+    }
+  }, 300);
+}
+
     // slide highlight to selected tab
     moveIndicator(button);
   });
 });
 
 // position highlight when page loads
-const activeTab = document.querySelector(".tab-button.active");
+// position highlight after fonts finish loading
+document.fonts.ready.then(() => {
+  const activeTab = document.querySelector(".tab-button.active");
 
-if (activeTab) {
-  moveIndicator(activeTab);
-}
+  if (activeTab) {
+    moveIndicator(activeTab);
+  }
+});
 
 // keep highlight aligned when window resizes
 window.addEventListener("resize", () => {
