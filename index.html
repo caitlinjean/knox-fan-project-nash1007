@@ -2,42 +2,203 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>knox fan project</title>
+  <meta name="theme-color" content="#18230b">
+  <link rel="stylesheet" href="https://use.typekit.net/osr4dtq.css">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
+
   
-<header>
-  <h1>NASHVILLE FAN PROJECT</h1>
-</header>
+<div class="hero">
 
-<main>
-  <section class="intro">
-    <p>
-      Hello Nashville! </br> At the end of the show tonight, as the band takes their bows, the song "You have a friend in me" will play.
+  <header>
+    <h1>
+      <span>NASHVILLE</span>
+      <span>FAN PROJECTS</span>
+    </h1>
+  </header>
+
+    <p class="centered">
+      Hellooo Nashville! Use the toggle below to discover fan projects for tonight's show! <br><br> -XOXO Street Team By Knox
     </p>
-  </section>
 
-  <section class="graphic">
-    <img
-      src="friend-graphic.png"
-      alt="you've got a friend in fan project graphic"
-    >
+    <!-- TOGGLE -->
 
-    <a href="friend-graphic.png" download>
-      download graphic
-    </a>
-  </section>
+    <div class="tab-toggle" role="tablist" aria-label="page sections">
+      <span class="tab-indicator" aria-hidden="true"></span>
+      <button class="tab-button active" id="tab-project"
+        type="button" role="tab" aria-selected="true"
+        aria-controls="panel-project"> ONE
+      </button>
+      <button class="tab-button" id="tab-other"
+        type="button" role="tab" aria-selected="false"
+        aria-controls="panel-other">TWO
+      </button>
+      <button class="tab-button" id="tab-three"
+        type="button" role="tab" aria-selected="false"
+        aria-controls="panel-three">THREE
+      </button>
+      <button class="tab-button" id="tab-four"
+        type="button" role="tab" aria-selected="false"
+        aria-controls="panel-four">FOUR
+      </button>
+    </div>
+</div>
 
-  <section class="details">
-    <h2>additional information</h2>
-    <p>
-      add your additional instructions here.
-    </p>
-  </section>
+<div class="content">
+
+  <main>
+
+    <!-- FIRST TAB -->
+    <div class="tab-panel active" id="panel-project" role="tabpanel" aria-labelledby="tab-project">
+
+      <section>
+        <h2>50/50 Watertowers</h2>
+        <p>When Knox plays the song 50/50, shine the flashlight on your phone through your watertower and hold it up in the air! </p>
+      </section>
+      
+      <section class="graphic">
+        <img
+          class="watertower"
+          src="watertower3.png"
+          alt="you've got a friend in fan project graphic" >
+      </section>
+
+      <section class="graphic">
+        <img 
+          class="fiftyfifty"
+          src="50:50.jpg"
+          alt="you've got a friend in fan project graphic">
+      </section>
+
+    </div>
+
+    <!-- SECOND TAB -->
+    <div class="tab-panel" id="panel-other"
+      role="tabpanel" aria-labelledby="tab-other" hidden>
+
+      <section>
+        <h2>You've got a friend<br>in Nashville!</h2>
+        <p>Tonight is the LAST show of Knox's US leg of tour, so we want to do something special to end the show! :) <br><br> After Knox sings his last song, (Pick Your Poison), the song "You've got a Friend in Me" will play as the band takes their final bows. As this occurs, we've made a graphic for fans to hold up in the air for Knox to see! <br><br>
+        <span style="color: #8b0000; font-variation-settings: 'wght' 900;">PRESS AND HOLD</span> on the image below to save it to your phone. Try somewhere near the grass at the bottom, it doesn't work super well over the text!  </p>
+      </section>
+
+      <section class="graphic">
+        <img
+          class="friend"
+          src="gotafriend.png"
+          alt="you've got a friend in fan project graphic" >
+      </section>
+
+      <section>
+        <p>At the end of the night, find the image on your phone, turn your brightness up, and hold it up in the air! </p>
+      </section>
+
+      <section class="graphic">
+        <img 
+          class="phone"
+          src="50:50.jpg"
+          alt="you've got a friend in fan project graphic">
+      </section>
+
+    </div>
+
+    <!-- THIRD TAB -->
+
+    <div class="tab-panel" id="panel-three"
+      role="tabpanel" aria-labelledby="tab-three" hidden>
+
+      <section>
+        <h2>Love Letters</h2>
+        <p>Find the Street Team in line to write Knox a Love Letter! Materials will be on the merch table once doors have opened. Available while supplies last! </p>
+      </section>
+
+      <section class="graphic">
+        <img 
+          class="cutout"
+          src="lovelettercutout.png"
+          alt="you've got a friend in fan project graphic">
+      </section>
+      
+      <section class="graphic">
+        <img 
+          class="box"
+          src="loveletterbox.jpg"
+          alt="you've got a friend in fan project graphic">
+      </section>
+
+    </div>
+
+    <!-- FOURTH TAB -->
+
+    <div class="tab-panel" id="panel-four"
+      role="tabpanel" aria-labelledby="tab-four" hidden>
+
+      <section>
+        <h2>Top Secret Tour Project</h2>
+        <p>All tour long, we've been working on a super cool, top secret project.<br><br> It is in fact a secret... Knox doesn't know the details so we can't describe it online! But, you CAN keep an eye out for it in line, and/or check the pinned post on our Instagram for more information! </p>
+      </section>
+
+      <div class="instagram-embed">
+        <iframe
+          src="https://www.instagram.com/p/DePeCXllSpF/embed/"
+          width="100%"
+          height="600"
+          frameborder="0"
+          scrolling="no"
+          title="Instagram post"
+          loading="lazy">
+        </iframe>
+    </div>
+
+
+    </div>
+
+
 </main>
+</div>
+<footer class="site-footer">
+  <h2>STREET TEAM BY KNOX</h2>
+
+  <div class="footer-links">
+
+  <div class="footer-column">
+    <div class="footer-social">
+      <span>Street Team Instagram</span>
+      <a href="https://www.instagram.com/streetteambyknox/">
+        @streetteambyknox
+      </a>
+    </div>
+
+    <div class="footer-social">
+      <span>Street Team TikTok</span>
+      <a href="https://www.tiktok.com/@stbyknox">
+        @stbyknox
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-column">
+    <div class="footer-social">
+      <span>Street Team Twitter</span>
+      <a href="https://x.com/stbyknox">
+        @stbyknox
+      </a>
+    </div>
+
+    <div class="footer-social">
+      <span>Design by Caitlin :)</span>
+      <a href="https://www.instagram.com/caitlins.creative.chaos/">
+        @caitlins.creative.chaos
+      </a>
+    </div>
+  </div>
+
+</div>
+</footer>
 
 </body>
 </html>
